@@ -6,7 +6,7 @@ use Twig\Loader\FilesystemLoader;
 
 require "../vendor/autoload.php";
 
-$page = '';
+$page = 'home';
 if (isset($_GET['p'])) {
     $page = $_GET['p'];
 } 
@@ -21,7 +21,10 @@ switch ($page) {
     case 'home':
         echo $twig->render('home.twig');
         break;
-    
+
+    case 'home':
+        echo $twig->render('contact.twig');
+        break;
     default:
         Header('HTTP/1.0 404 Not Found');
         echo $twig->render('404.twig');
