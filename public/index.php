@@ -1,10 +1,16 @@
 <?php
 
-use Framework\App;
+use Twig\Environment;
+use Twig\Loader\ArrayLoader;
+use Twig\Loader\FilesystemLoader;
 
 require "../vendor/autoload.php";
 
-$app = new App([
 
+$loader = new FilesystemLoader(__DIR__ . '../../templates');
+
+$twig = new Environment($loader, [
+    'cache' => false,
 ]);
-$app->run();
+
+echo $twig->render('home.twig');
