@@ -37,6 +37,10 @@ class ComposerStaticInit7d14ad694212c3cdbd015fe9eabd656f
         array (
             'Prophecy\\' => 9,
         ),
+        'M' => 
+        array (
+            'Michelf\\' => 8,
+        ),
         'F' => 
         array (
             'Framework\\' => 10,
@@ -78,6 +82,10 @@ class ComposerStaticInit7d14ad694212c3cdbd015fe9eabd656f
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
+        ),
+        'Michelf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/michelf/php-markdown/Michelf',
         ),
         'Framework\\' => 
         array (
